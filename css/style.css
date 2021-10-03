@@ -23,6 +23,19 @@ body {
     100% {background-color:rgb(243, 179, 206); left:0px; top:0px;}
 }
 
+.page {
+    position: relative;
+    animation: page;
+    animation-duration: 3s;
+}
+
+@keyframes page {
+    0% {top: 0px;}
+    25% {top: 75px;}
+    50% {top: 150px;}
+    100% {top: 0px;}
+}
+
 #td-melt {
     text-align: right;
     padding-right: 20px;
@@ -101,6 +114,18 @@ body {
 img {
     border-radius: 8px;
     width: 250px;
+}
+
+.picture {
+    position: relative;
+    animation: picture;
+    animation-duration: 3s;
+}
+
+@keyframes picture {
+    0% {left: -1000px;}
+    85% {left: 50px;}
+    100% {left: 0;}
 }
 
 .footer {
